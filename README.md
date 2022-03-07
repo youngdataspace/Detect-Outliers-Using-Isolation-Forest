@@ -45,17 +45,19 @@ As you can infer from the above, a data point is likely an outlier if it can be 
 Here are the steps involving the Random Forest algorithm.
 
 First, the algorithm creates an isolation tree by going through the following steps:<br>
-[1] Randomly select a sub-sample (Sci-kit learn default: 100 instances/data points)
-[1] Select a point to isolate.<br>
-[2] Randomly select a feature (i.e., variable) from the set of features X.<br>
-[3] Randomly select a threshold between the minimum and the maximum value of the feature x.<br>
-[4] If the data point is less (greater) than the threshold, then it flows through the left branch of the tree (right). In other words, define the new minimum (maximum) of the range to the threshold for the next iteration.<br>
-[5] Repeat steps 2 through 4 until the point is isolated or until a pre-defined max number of iterations is reached.
-[6] Record the number of times the steps 2 through 4 were repeated.
+[1] Randomly select a sub-sample (Sci-kit learn's default: 100 instances/data points)<br>
+[2] Select a point to isolate.<br>
+[3] Randomly select a feature (i.e., variable) from the set of features X.<br>
+[4] Randomly select a threshold between the minimum and the maximum value of the feature x.<br>
+[5] If the data point is less (greater) than the threshold, then it flows through the left branch of the tree (right). In other words, define the new minimum (maximum) of the range to the threshold for the next iteration.<br>
+[6] Repeat steps 3 through 5 until the point is isolated or until a pre-defined max number of iterations is reached.<br>
+[7] Record the number of times the steps 3 through 5 were repeated.
 
 Prediction process: Isolation Forest is created by computing the following score based on a collection trees (like 100 trees).
 
-![image](https://user-images.githubusercontent.com/99772400/157103276-c0c2f9fa-1d35-4584-a41d-80e6f5c45f77.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99772400/157125966-1c814894-ffe6-4880-aa28-3713f4a6b656.png" width="160" height="30">
+</p>
 
 where E[h(x)] is the average number of successful iterations for instance x and c(n) is the average iterations for uncussessful iterations.
 
@@ -67,19 +69,6 @@ As I noted above, Isolation Forest does not assume normal distribution and is ab
 As I will discuss more in the implementation step, the Isolation Forest algorithm requires us to pick the percentage of anomalies in the dataset. Thus, we need to have some idea of this. 
 
 Second, axis-parallel splits create some artificial normal regions. I won't go into details but this issue is addressed by the follow up study <a href="https://ieeexplore.ieee.org/document/8888179">Hariri, Kind, and Brunner (2021)</a>. And here are more resources: <a href="https://github.com/sahandha/eif">GitHub</a> and <a href="https://medium.datadriveninvestor.com/lets-find-some-outliers-with-isolation-forest-4ed22175a8d3">blog</a>. I will post notebook on this topic when I get a chance.
-
-## 필요없는 ##
-https://towardsdatascience.com/multi-variate-outlier-detection-in-python-e900a338da10
-https://medium.com/codex/isolation-forest-outlier-detection-simplified-5d938548bb5c
-
-## References
-https://ieeexplore.ieee.org/abstract/document/4781136?casa_token=A5ZM3TQZHhsAAAAA:DPITalJ8ZZ-5KnuBufXLZkFg6fsICEyyi0vfXmuGejd8gFtAldJ2ZFuS0JUoBAS8GPoF0JG5Kg
-
-https://quantdare.com/isolation-forest-algorithm/
-
-https://towardsdatascience.com/outlier-detection-with-isolation-forest-3d190448d45e
-
-https://www.analyticsvidhya.com/blog/2021/07/anomaly-detection-using-isolation-forest-a-complete-guide/
 
 ## References
 [1] <a href="https://ieeexplore.ieee.org/abstract/document/4781136?casa_token=A5ZM3TQZHhsAAAAA:DPITalJ8ZZ-5KnuBufXLZkFg6fsICEyyi0vfXmuGejd8gFtAldJ2ZFuS0JUoBAS8GPoF0JG5Kg">Liu, Ting, and Zhou (2008) Isolation Forest</a><br>
