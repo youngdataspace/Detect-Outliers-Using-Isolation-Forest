@@ -20,6 +20,11 @@ I detect outliers using the Isolation Forest method in <a href="https://github.c
 
 Figure 1 shows US public firms' characteristics shown in 2-dimensions. The goal of this notebook is to detect outliers, as shown in red in Figure 2.
 
+<p align="center">
+  <img src="https://github.com/youngdataspace/treat-outliers/blob/main/Figure%201.png" width=80% height=80%>
+  <img src="https://github.com/youngdataspace/treat-outliers/blob/main/Figure%202.png" width=80% height=80%>
+</p>
+
 ## Why and how to look for outliers
 Many machine learning algorithms and regression models are susceptible to outliers. An outlier is a data point that significantly deviates from other points. Unless they are properly taken care of, the inferences obtained from statistical models conducted on the data may not be useful.
 
