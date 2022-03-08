@@ -1,6 +1,6 @@
 # Isolation Forest Anomaly Detection - Identify Outliers
 
-![Introduction](https://raw.githubusercontent.com/youngdataspace/K-Means-Clustering-Fixed-Effects/master/Introduction.gif)
+![Introduction](https://github.com/youngdataspace/treat-outliers/blob/main/Introduction.gif)
 
 ## Outline
 In <a href="https://github.com/youngdataspace/treat-outliers/blob/main/detect_outliers.ipynb">this notebook</a>, I explain and implement Isolation Forest. My goal is to explain using plain English so that non-technical readers can understand. This notebook includes the following topics:
