@@ -3,7 +3,9 @@
 ![Introduction](https://github.com/youngdataspace/treat-outliers/blob/main/Introduction.gif)
 
 ## Outline
-In <a href="https://github.com/youngdataspace/treat-outliers/blob/main/detect_outliers.ipynb">this notebook</a>, I explain and implement Isolation Forest. My goal is to explain using plain English so that non-technical readers can understand. This notebook includes the following topics:
+In <a href="https://github.com/youngdataspace/treat-outliers/blob/main/detect_outliers.ipynb">this notebook</a>, I explain and implement Isolation Forest. My goal is to explain using plain English so that non-technical readers can understand the algorithm. 
+
+This notebook includes the following topics:
 - Why and how to look for outliers.
 - How Isolation Forest works.
 - The benefits and drawbacks of Isolation Forest.
