@@ -1,6 +1,6 @@
 # Isolation Forest Anomaly Detection - Identify Outliers
 
-![Introduction](https://github.com/youngdataspace/treat-outliers/blob/main/Introduction2.gif)
+![Introduction](https://github.com/youngdataspace/Detect-Outliers-Using-Isolation-Forest/blob/main/GIF%20Intro.gif?raw=true)
 
 ## Outline
 In <a href="https://github.com/youngdataspace/treat-outliers/blob/main/detect_outliers.ipynb">this notebook</a>, I explain and implement Isolation Forest. My goal is to explain using plain English so that non-technical readers can understand the algorithm. 
@@ -41,7 +41,7 @@ Anomalies have two characteristics. They are distanced from normal points and th
 Isolation Forest randomly cuts a given sample until a point is isolated. The intuition is that outliers are relatively easy to isolate. Take a look at the following GIF.
 
 <p align="center">
-  <img src="https://github.com/youngdataspace/treat-outliers/blob/main/Split%20Outlier.gif" width=80% height=80%>
+  <img src="https://github.com/youngdataspace/Detect-Outliers-Using-Isolation-Forest/blob/main/GIF%20Outlier%20Split.gif?raw=true" width=80% height=80%>
 </p>
 
 It took 4 times to randomly cut the sample and isolate the red point, which is clearly an outlier.
@@ -49,7 +49,7 @@ It took 4 times to randomly cut the sample and isolate the red point, which is c
 Now, take a look at the next GIF, which attempts to cut the sample until the yellow point (normal point) is isolated.
 
 <p align="center">
-  <img src="https://github.com/youngdataspace/treat-outliers/blob/main/Split%20Normal%20Point.gif" width=80% height=80%>
+  <img src="https://github.com/youngdataspace/Detect-Outliers-Using-Isolation-Forest/blob/main/GIF%20Normal%20Point.gif?raw=true" width=80% height=80%>
 </p>
 
 This time, the algorithm took a lot more cuts.
